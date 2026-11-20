@@ -1,0 +1,23 @@
+# MATLAB
+*.asv
+*.mex*
+*.mat~
+slprj/
+cache/
+*.mlappinstall
+
+# Octave
+octave-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

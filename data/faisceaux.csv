@@ -1,0 +1,7 @@
+Lot,Type_faisceau,Famille,M1_Coupe,M2_Sertissage,M3_Assemblage,M4_Test,r_min,d_min,w
+J1,Porte,A,12,15,30,8,0,75,2
+J2,Tableau de bord,B,25,30,60,15,5,105,3
+J3,Moteur,C,20,25,45,12,10,110,3
+J4,Feu arrière,A,10,12,25,6,0,65,1
+J5,Coffre,A,8,10,20,5,8,60,1
+J6,Siège,B,15,18,35,9,3,95,2

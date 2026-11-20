@@ -1,0 +1,52 @@
+
+=== 1. Exemple à la main : 3 lots J4, J5, J1 (no-wait, sans préparation) ===
+  PASS  D(J4,J5)
+  PASS  D(J5,J1)
+  PASS  Cmax(J4,J5,J1)
+
+=== 2. Cas des faisceaux : résultats de contrôle de la version 1 ===
+  PASS  naïf J1..J6, no-wait sans préparation
+  PASS  meilleure, no-wait sans préparation
+  PASS  nombre de séquences optimales (no-wait sans prép.)
+  PASS  séquences optimales = J5,J1,J3,J2,J6,J4 et J5,J1,J6,J3,J2,J4
+  PASS  naïf J1..J6, no-wait avec préparation
+  PASS  meilleure, no-wait avec préparation
+  PASS  séquence optimale no-wait avec préparation
+  PASS  pire séquence : Cmax
+  PASS  J3,J4,J6,J1,J5,J2 : Cmax
+  PASS  naïf J1..J6, flow shop classique sans préparation
+  PASS  meilleure, flow shop classique sans préparation
+
+=== 3. Faisabilité des plannings (séquences aléatoires, tous les environnements) ===
+  PASS  plannings faisables (200 tests)
+
+=== 4. Machines parallèles : exemple à la main (4 lots, 2 machines identiques) ===
+  PASS  PM FIFO : Cmax
+  PASS  PM FIFO : TFT
+  PASS  PM FIFO : TT
+  PASS  PM FIFO : machines (1,2,2,1)
+  PASS  QM : lot 1 (p=6) sur M2 de vitesse 2 -> fin 3
+
+=== 5. Johnson = énumération (flow shop 2 machines, 30 instances aléatoires) ===
+  PASS  Johnson optimal
+
+=== 6. Instance de Taillard ta001 (20 lots, 5 machines) ===
+   premières durées générées : [54 83 15 71 77 36 53 38]
+  PASS  borne inférieure ta001 (publiée : 1232)
+   CDS = 1390 | NEH = 1286 (0.4 s) | NEH + recherche locale = 1286 (1.5 s) | meilleure valeur connue = 1278
+  PASS  aucun résultat sous l'optimum 1278
+   écarts à 1278 : CDS 8.76 % | NEH 0.63 % | NEH + RL 0.63 %
+
+=== 7. Job shop classique ft06 (optimum connu : 55) ===
+  PASS  ft06 FIFO faisable
+  PASS  ft06 LIFO faisable
+  PASS  ft06 SPT faisable
+  PASS  ft06 LPT faisable
+   règles FIFO, LIFO, SPT, LPT : [65 80 96 67]
+   meilleure liste de priorité (720 listes) : Cmax = 59
+  PASS  ft06 : Cmax >= optimum 55
+   écart à l'optimum 55 : 7.3 %
+
+=== Bilan : 0 test(s) en échec ===
+
+ans = 0
